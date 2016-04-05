@@ -1,5 +1,7 @@
 FROM node:5-slim
 
-COPY . /src
+#COPY . /src
 
-CMD ["node", "/src/webservice.js"]
+RUN npm install geocoder
+
+#CMD ["node", "webservice.js"]
